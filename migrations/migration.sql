@@ -1,0 +1,23 @@
+BEGIN TRANSACTION;
+
+CREATE TABLE IF NOT EXISTS users(
+  id BIGSERIAL PRIMARY KEY,
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) UNIQUE NOT NULL,
+  password_digest VARCHAR(255) NOT NULL 
+);
+
+CREATE TABLE IF NOT EXISTS books(
+  id BIGSERIAL PRIMARY KEY,
+  title VARCHAR(255),
+  sub_title TEXT,
+  author VARCHAR(255),
+  description TEXT,
+  snippet TEXT,
+  publisher VARCHAR(255),
+  isbn VARCHAR(255),
+  user_id INTEGER NOT NULL REFERENCES users (id)
+);
+
+COMMIT; 
