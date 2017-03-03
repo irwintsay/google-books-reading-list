@@ -1,0 +1,39 @@
+{
+  "name": "google-books-reading-list",
+  "version": "1.0.0",
+  "description": "Reading list app with Google Books API and Test-driven Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irwintsay/google-books-reading-list.git"
+  },
+  "keywords": [
+    "google",
+    "books",
+    "tdd"
+  ],
+  "author": "Irwin Tsay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irwintsay/google-books-reading-list/issues"
+  },
+  "homepage": "https://github.com/irwintsay/google-books-reading-list#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.0",
+    "cors": "^2.8.1",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.0",
+    "jsonwebtoken": "^7.3.0",
+    "pg-promise": "^5.6.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "supertest": "^3.0.0"
+  }
+}
