@@ -13,6 +13,7 @@ controller.create = (req, res) => {
 };
 
 controller.login = (req, res) => {
+  console.log(req.body);
   User
   .findByEmail(req.body.email)
   .then(user => {
@@ -21,6 +22,7 @@ controller.login = (req, res) => {
       if(isAuthed) {
         const token = jwt.sign({email: user.email}, 'tom brady goat', {expiresIn: '7d'});
         res.json({token: token});
+        // res.redirect('/home');
       } else {
         res.sendStatus(401);
       }

@@ -3,9 +3,22 @@
 <head>
   <title>The Reading List App</title>
   <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous" defer></script>
   <script type="text/javascript" src="/scripts/main.js" defer></script>
 </head>
 <body>
 <h1>Reading List App</h1>
+<form class="login" action="/users/login" method="POST">
+  <input type="text" name="email" placeholder="Email">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" value="Login">
+</form>
+<form class="search">
+  <input type="text" name="search" placeholder="Search Google Books">
+  <input type="submit" value="Search">
+</form>
 </body>
 </html>
